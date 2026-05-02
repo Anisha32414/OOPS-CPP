@@ -1,0 +1,30 @@
+1. Getter / Setter method:-
+
+--> It is a method by using which one can set the value of a private 
+    data/attribute anf access it as well. 
+
+Ex: 
+    class Employee{
+    private: 
+        int salary;
+    public: 
+        string name;
+        void setter(int sal){
+            salary=sal;
+        }
+        int getter(){
+            return salary;
+        }
+    };
+
+    int main(){
+        Employee e1;
+        e1.setter(25000);
+        cout<< e1.getter();
+
+        return 0;
+    }
+
+--->without using getter/setter method if we try to access private attribute, 
+    the code will raise an error as the private member of the class can not 
+    be accessed outside the class.
