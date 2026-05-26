@@ -32,23 +32,51 @@ Ex. class teacher{
                             * public
                             * protected
 
-# Constructor :- A special Method invoked everytime when a new object is created.
+
+# Constructor :-
+
+  A special Method invoked everytime when a new object is created.
       ----> Same name as class.
       ----> Doesn't have a return type.
       ----> Only called once(automatically), when object is created.
-      ----> Memory allocation happen when constructor is called.
+      ----> Memory allocation happen when constructor is called.  ---->> Memory will be assigned to every object separately when constructor is called.
       ----> constructor is automatically created by the compiler if not created by the programmer.
+
+* In this we can assign the value to some variables automatically during object creation. 
 
     Ex. class Animal{
         private: 
            int price;
         public:
            string name;
-           string category;
            string sound;
 
            Animal(){
                 cout<<"I am constructor!! New object is created";
+                sound="Bark";
+
+                //Sound will be automatically set as "Bark" everytime a new object is created.
            }  
         };
+
+* There are two types of constructors:-
+i.  Non-Parameterized -> it do not have any parameter in constructor like given in above example.
+ii. Parameterized -> it have parameters in constructor. example given below:-
+     
+    Ex. class Animal{
+        private: 
+           int price;
+        public:
+           string name;
+           string sound;
+
+           Animal(string n,string s,int p){
+                name=n;
+                sound=s;
+                price=p;
+           }  
+        };
+
+## By using parameterized and Non-parameterized constructor in a class is an example of "Constructor Overloading"--->Polymorphism.
+
 <2>

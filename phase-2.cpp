@@ -12,7 +12,19 @@ public:
 
     Animal(){   
         cout<<endl<<"I am constructor!! New object is created"<<endl;
-    }  
+    }
+
+    Animal(string n,string s,int p){
+        cout<<endl<<"I am constructor!! New object is created"<<endl;
+        name=n;
+        sound=s;
+        price=p;
+    }
+    void get_info(){
+        cout<<name<<endl;
+        cout<<sound<<endl;
+        cout<<price;
+    }
 
     void animal_name(string n){
         name=n;
@@ -42,9 +54,9 @@ int main(){
     cout<<endl;
     cout<<a.name<<endl;
     cout<<a.sound<<endl;
-    cout<<a.get_price();
+    cout<<a.get_price()<<endl;
 
-    Animal b;
-    Animal c;
+    Animal b("Cat","Meow",12000);
+    b.get_info();
     return 0;
 }
