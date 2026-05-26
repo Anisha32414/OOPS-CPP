@@ -1,7 +1,7 @@
 1. Getter / Setter method:-
 
 --> It is a method by using which one can set the value of a private 
-    data/attribute anf access it as well. 
+    data/attribute and access it as well. 
 
 Ex: 
     class Employee{

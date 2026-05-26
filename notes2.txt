@@ -1,0 +1,54 @@
+4 Pillars of OOPS:-
+
+
+<1> Encapsulation --->
+
+* It is wrapping up of data and methods together in a single unit called CLASS.
+
+Ex. class teacher{
+    private:
+        int salary;
+    public:
+        string name;
+        string dept;
+        int age;
+
+        void update_dept(string department){
+            dept=department;
+        }
+
+        void set_sal(int sal){
+            salary=sal;
+        }
+        int get_sal(){
+            return salary;
+        }
+    };
+
+    ----------->>>>> above written class "teacher" is an example of ENCAPSULATION.
+    ----------->>>>> We use data hiding in Encapsulation for hiding sensitive information
+    ----------->>>>> Access Modifiers are used in encalpsulation for data hiding:-
+                            * private
+                            * public
+                            * protected
+
+# Constructor :- A special Method invoked everytime when a new object is created.
+      ----> Same name as class.
+      ----> Doesn't have a return type.
+      ----> Only called once(automatically), when object is created.
+      ----> Memory allocation happen when constructor is called.
+      ----> constructor is automatically created by the compiler if not created by the programmer.
+
+    Ex. class Animal{
+        private: 
+           int price;
+        public:
+           string name;
+           string category;
+           string sound;
+
+           Animal(){
+                cout<<"I am constructor!! New object is created";
+           }  
+        };
+<2>
