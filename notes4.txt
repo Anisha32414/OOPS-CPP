@@ -1,0 +1,57 @@
+# Types of copy:-  
+
+    * shallow --> create copy of all the member values of one object 
+
+    * deep    --> create copy of all the member values of one oject as well as the the 
+                  dynamic memory allocation the members are pointing to.
+
+shallow copy:- changes in this type of copy constructor reflect on all the copied ojects..
+               we do not require a programmer made copy constructor in this.
+
+               all the copies point to a single allocated memory in heap.
+
+Deep copy:-  changes in this type do not reflect on other copied objects values...
+             we have to create a copy constructor by oue self in this type...
+
+             all the copies point to different allocated memory in heap...
+             at starting all the addresses consist of same values...
+             but when we change the data it will change only one address data in heap other remains unchanged...
+
+
+             Ex.(deep copy):-
+
+            class student{
+            public:
+                string name;
+                string* dept;
+
+                student(string name,string dept){
+                    this->name=name;
+                    *dept=new string;
+                    *dept=dept;
+                }
+
+                student(student &obj){
+                    this->name=obj.name;
+                    *dept=new string;
+                    *dept=*obj.dept;
+                }
+
+                void get_info(){
+                    cout<<name<<endl;
+                    cout<<*dept<<endl;
+                }
+             };
+             int main(){
+                student st1("anisha","csai");
+                student st2(st1);
+
+                st1.get_info();
+                st2.dept="cse";
+                st2.name="kashish";
+
+                st1.get_info();
+                st2.get_info();
+
+                return 0;
+             }

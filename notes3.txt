@@ -1,0 +1,86 @@
+## THIS in OOPS
+
+* It is a special pointer used to point the current object.
+---> We use (this->properties) or *(this).properties method to point to a parameter of a class.
+
+Ex. class student{
+    public:
+        string name;
+        string dept;
+        int rollnum;
+        int age;
+
+        student(){
+            cout<<"new object created!!"<<endl;
+        }
+
+        student(string name,string dept,int rollnum,int age){
+            cout<<"new object created!!"<<endl;
+            this->name=name;
+            this->dept=dept;
+            this->rollnum=rollnum;
+            this->age=age;
+        }
+
+        void get_info(){
+            cout<<this->name<<endl;
+            cout<<this->dept<<endl;
+            cout<<this->rollnum<<endl;
+            cout<<this->age<<endl;
+        }
+    };
+    int main(){
+        student st1;
+        student st2("anisha","csai",001,22);
+
+        st2.get_info();
+        return 0;
+    }
+
+
+## Copy constructor in OOPS ----> cpp has a default copy constructor, we can make our own copy constructor as well
+
+* It is a constructor that is used to create exact copy of an object.
+* We pass object in this constructor by reference
+* change in one is reflected on another...address is same in this.
+
+
+Ex. class student{
+    public:
+        string dept;
+        int age;
+        string joining;
+
+        student(){
+            cout<<"new object created"<<endl;
+        }
+
+        student(string dept,int age,string joining){
+            this->dept=dept;
+            this->age=age;
+            this->joining=joining;
+        }
+
+        student(student &obj){              // copy constructor created by the programmer...
+                                            // if we remove it copy construtor still works...
+            this->dept=obj.dept;
+            this->age=obj.age;
+            this->joining=obj.joining;
+        }
+
+        void get_info(){
+            cout<<dept<<endl;
+            cout<<age<<endl;
+            cout<<joining<<endl;
+        }
+    };
+
+    int main(){
+        student st1("cse",22,"july");
+        student st2(st1);                    //copy constructor --> we ceate a copy st2 of st1 object
+
+        st1.get_info();
+
+        st2.get_info();
+        return 0;
+    }
