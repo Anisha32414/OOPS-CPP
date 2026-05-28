@@ -1,0 +1,4 @@
+# Destructor :- It is opposite of constructor.
+
+-constructor is used to allocate the memory to the objects.
+-destructor is used to deallocate the memory assigned to the objects.
