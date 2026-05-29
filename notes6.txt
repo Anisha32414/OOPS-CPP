@@ -1,0 +1,35 @@
+(2)Inheritance
+- When properties and member functions of the base class are passed to the derived class is called inheritance.
+
+- It is used for code reusability.
+
+- A class already have some properties and methods and we want to use them in some other class. So, instead of 
+  writing entire code again we simply inherite the properties and methods of the base class in some other class 
+  which is the derived class.
+
+Ex. class teacher{                             //base class -> parent class
+    public:
+       string name:
+       string dept;
+
+       teacher(){
+          cout<<"Parent class constructor called"<<endl;
+       }
+
+       ~teacher(){
+          cout<<"parent class destructor is called"<<endl;
+       }
+    };
+    
+    class student:public teacher{              //derived class -> child class
+    public:
+        string subject;
+
+        student(){
+            cout<<"student class(derived class) constructor called"<<endl;
+        }       
+
+        ~student(){
+            cout<<"student class destructor called"<<endl;
+        }
+    };
