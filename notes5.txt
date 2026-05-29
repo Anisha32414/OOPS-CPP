@@ -2,3 +2,43 @@
 
 -constructor is used to allocate the memory to the objects.
 -destructor is used to deallocate the memory assigned to the objects.
+
+-Just like constructor, destructor are also inbuilt in cpp but a programmer can also make it by themselve.
+    *syntax:- ~class_name(){
+                   cout<<"destructor is called..memory deallocated";
+              }
+
+- Destructor is imporatant to avoid memory leakage.
+    **memory leakage:- when so many pointers point to the objects that are not in use and we forget to deallocate 
+                       that memory is called memory leakage, to avoid this problem we use deconstructors.
+
+- The deconstructors are used to deallocate the memory allocated with help of "new" in objects.
+
+- The deconstructor is called when the main() end.
+
+Ex. class teacher{
+    private: 
+        double salary;
+    public: 
+        string name;
+        string dept;
+        int age;
+
+        teacher(){            ----> constructor
+            cout<<"new object created"<<endl;
+        }
+
+        ~teacher(){           ----> destructor
+            cout<<"deallocating object memory"<<endl;
+        }
+
+        void set_info(string name,string dept,int age,double salary){
+            this->name=name;
+            this->dept=dept;
+            this->age=age;
+            this->salary=salary;
+        }
+        void get_info(){
+            cout<<name<<endl<<dept<<endl<<age<<endl<<salary;
+        }
+    };
