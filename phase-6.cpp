@@ -6,11 +6,11 @@ public:
        string name;
        string dept;
 
-       teacher(){
+       teacher(){         // parent class constructor
           cout<<"Parent class constructor called"<<endl;
        }
 
-       ~teacher(){
+       ~teacher(){        // parent class destructor
           cout<<"Parent class destructor called"<<endl;
        }
 };
@@ -20,11 +20,11 @@ class student:public teacher{              //derived class -> child class
 public:
         string subject;
 
-        student(){
+        student(){   // child class constructor
             cout<<"student class constructor called"<<endl;
         }       
 
-        ~student(){
+        ~student(){  // child class destructor
             cout<<"student class destructor called"<<endl;
         }
         void get_info(){
