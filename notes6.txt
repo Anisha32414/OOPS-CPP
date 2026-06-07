@@ -33,3 +33,11 @@ Ex. class teacher{                             //base class -> parent class
             cout<<"student class destructor called"<<endl;
         }
     };
+
+
+Types of Inheritance:-
+1. Single Inheritance: one parent having one child
+2. Multiple Inheritance: a child having multiple parents
+3. Multi-level Inheritance: a child have a parent and that parent is also a child of another parent class
+4. hybrid Inheritance: multiple Inheritance are combined together in this type
+5. Hierarchial Inheritance: a single parent class is inherited by multiple child classes
