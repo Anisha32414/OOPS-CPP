@@ -1,4 +1,4 @@
-// Hierarchial Inheritance example:- 
+// Multiple Inheritance example:- 
 
 #include<bits/stdc++.h>
 using namespace std;
