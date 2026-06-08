@@ -1,0 +1,14 @@
+# Polymorphism (many forms):- 
+ability of objects to take on different forms or behave in different ways depending 
+on the context in which they are used.
+
+-------------------------------------------------------------------------------------------------------------------
+
+Types:-
+1. Compiletime polymorphism -> function overloading -> static polymorphism(Ex. constructor/function overloading)
+   * Same name of constructor/function but different no. of parameters or different data types of parameter.
+   * which constructor/function will be called is decided at compile time.
+
+2. Runtime polymorphism ---> function overriding -> dynamic polymorphism
+   * parent and child class contain same function but with different functionality.
+   * parent class function is said to be overridden
