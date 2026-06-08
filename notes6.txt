@@ -35,7 +35,8 @@ Ex. class teacher{                             //base class -> parent class
     };
 
 
-Types of Inheritance:-
+# Types of Inheritance:-
+
 1. Single Inheritance: one parent having one child
 2. Multiple Inheritance: a child having multiple parents
 3. Multi-level Inheritance: a child have a parent and that parent is also a child of another parent class
