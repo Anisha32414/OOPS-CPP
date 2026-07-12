@@ -8,9 +8,11 @@
                    cout<<"destructor is called..memory deallocated";
               }
 
-- Destructor is imporatant to avoid memory leakage.
-    **memory leakage:- when so many pointers point to the objects that are not in use and we forget to deallocate 
-                       that memory is called memory leakage, to avoid this problem we use deconstructors.
+- Destructor is important to avoid memory leakage.
+    **memory leakage:- A memory leak happens when a computer program requests memory from the operating system to 
+                       perform a task, but fails to release or "return" that memory when it is no longer needed. 
+                       Over time, this causes the program to consume more and more RAM, eventually leading to 
+                       system slowdowns or crashes.
 
 - The deconstructors are used to deallocate the memory allocated with help of "new" in objects.
 
