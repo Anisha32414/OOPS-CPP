@@ -1,6 +1,5 @@
 # Compiletime Polymorphism:-
 
-
 Just like constructor overloading, function overloading works same...there will be same name of functions 
 but the number of parameters or the data type of parameters will be different.
 
@@ -42,6 +41,6 @@ Ex.
 
        student s2;
        cout<<"age of the student is "<<s2.dob(14,8,2004);
-       
+
        return 0;
    }
