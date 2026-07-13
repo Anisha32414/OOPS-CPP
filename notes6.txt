@@ -18,6 +18,7 @@ Ex. class teacher{                             //base class -> parent class
 
        ~teacher(){
           cout<<"parent class destructor is called"<<endl;
+          
        }
     };
     
