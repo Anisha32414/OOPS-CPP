@@ -1,11 +1,6 @@
-# Compiletime Polymorphism:-
+#include<bits/stdc++.h>
+using namespace std;
 
-
-Just like constructor overloading, function overloading works same...there will be same name of functions 
-but the number of parameters or the data type of parameters will be different.
-
-Ex. 
-   
    class student{
    public:
        string name;
@@ -16,11 +11,11 @@ Ex.
        int year;
 
        student(){
-          cout<<"new object created, constructor called";
+          cout<<"new object created, constructor called"<<endl;
        }
 
        ~student(){
-          cout<<"memory deallocated..destructor called";
+          cout<<"memory deallocated..destructor called"<<endl;
        }
 
        int dob(int month,int year){
@@ -38,10 +33,10 @@ Ex.
    };
    int main(){
        student s1;
-       cout<<"age of the studemt is "<<s1.dob(4,2004);
+       cout<<"age of the studemt is "<<s1.dob(4,2003)<<endl;
 
        student s2;
-       cout<<"age of the student is "<<s2.dob(14,8,2004);
+       cout<<"age of the student is "<<s2.dob(14,8,2004)<<endl;
        
        return 0;
    }
